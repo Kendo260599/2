@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phong Thủy Lê Gia</title>
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Tra Cứu Phong Thủy Bất Động Sản</h1>
+
+    <form id="birthForm">
+      <label for="birthday">Ngày sinh (dương lịch):</label>
+      <input type="date" id="birthday" name="birthday" required />
+
+      <label for="hour">Giờ sinh (0–23):</label>
+      <input type="number" id="hour" name="hour" min="0" max="23" required />
+
+      <label for="gender">Giới tính:</label>
+      <select id="gender" name="gender" required>
+        <option value="nam">Nam</option>
+        <option value="nu">Nữ</option>
+      </select>
+
+      <label for="houseYear">Năm xây nhà / nhập trạch:</label>
+      <input type="number" id="houseYear" name="houseYear" min="1900" max="2100" required />
+
+      <label for="houseDirection">Hướng nhà:</label>
+      <select id="houseDirection" name="houseDirection" required>
+        <option value="Bắc">Bắc</option>
+        <option value="Đông Bắc">Đông Bắc</option>
+        <option value="Đông">Đông</option>
+        <option value="Đông Nam">Đông Nam</option>
+        <option value="Nam">Nam</option>
+        <option value="Tây Nam">Tây Nam</option>
+        <option value="Tây">Tây</option>
+        <option value="Tây Bắc">Tây Bắc</option>
+      </select>
+
+      <!-- Thế đất & môi trường xung quanh -->
+      <fieldset style="margin-top:1.5rem; border:1px solid #ddd; padding:1rem; border-radius:6px;">
+        <legend>Thế đất & Môi trường</legend>
+
+        <label><input type="checkbox" id="hasSlope" name="hasSlope" /> Đất dốc xuống mặt tiền</label>
+        <label for="slopeDirection">Hướng dốc:</label>
+        <select id="slopeDirection" name="slopeDirection">
+          <option value="">--Chọn--</option>
+          <option value="Bắc">Bắc</option>
+          <option value="Đông Bắc">Đông Bắc</option>
+          <option value="Đông">Đông</option>
+          <option value="Đông Nam">Đông Nam</option>
+          <option value="Nam">Nam</option>
+          <option value="Tây Nam">Tây Nam</option>
+          <option value="Tây">Tây</option>
+          <option value="Tây Bắc">Tây Bắc</option>
+        </select>
+
+        <label><input type="checkbox" id="hasRoadFacing" name="hasRoadFacing" /> Đường đâm thẳng vào cửa</label>
+        <label for="roadDirection">Hướng đường:</label>
+        <select id="roadDirection" name="roadDirection">
+          <option value="">--Chọn--</option>
+          <option value="Bắc">Bắc</option>
+          <option value="Đông Bắc">Đông Bắc</option>
+          <option value="Đông">Đông</option>
+          <option value="Đông Nam">Đông Nam</option>
+          <option value="Nam">Nam</option>
+          <option value="Tây Nam">Tây Nam</option>
+          <option value="Tây">Tây</option>
+          <option value="Tây Bắc">Tây Bắc</option>
+        </select>
+
+        <label><input type="checkbox" id="hasWaterFront" name="hasWaterFront" /> Có mặt nước trước cửa</label>
+        <label for="waterDistance">Khoảng cách nước (m):</label>
+        <input type="number" id="waterDistance" name="waterDistance" placeholder="Ví dụ: 5" />
+
+        <label><input type="checkbox" id="hasHospitalFront" name="hasHospitalFront" /> Bệnh viện trước mặt</label>
+        <label><input type="checkbox" id="hasTempleFront" name="hasTempleFront" /> Chùa/đình/miếu trước cửa</label>
+        <label><input type="checkbox" id="hasChurchFront" name="hasChurchFront" /> Nhà thờ trước cửa</label>
+        <label><input type="checkbox" id="hasCemeteryFront" name="hasCemeteryFront" /> Nghĩa địa trước mặt</label>
+      </fieldset>
+
+      <button type="submit">Xem phong thủy</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+body {
+  font-family: 'Noto Serif SC', serif;
+  background-image: url('https://i.imgur.com/YZpcuSt.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 2rem;
+  color: #3b1d0e;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: rgba(255, 248, 235, 0.96);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 3px double #b3925a;
+}
+
+h1 {
+  text-align: center;
+  color: #7a1f00;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px dashed #b3925a;
+  padding-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  color: #5a2c00;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #fefcf7;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #7a1f00;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a02400;
+}
+
+.result-box {
+  margin-top: 2rem;
+  background: #fffaf0;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #d6ae78;
+  line-height: 1.6;
+}
+
+.result-box h2, .result-box h3 {
+  color: #7a1f00;
+  margin-top: 0;
+}
+
+fieldset {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #b3925a;
+  border-radius: 6px;
+  background: rgba(255, 250, 240, 0.8);
+}
+
+legend {
+  font-weight: bold;
+  color: #7a1f00;
+  padding: 0 0.5rem;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+fieldset input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1.2rem;
+  }
+  button {
+    font-size: 0.95rem;
+  }
+}
