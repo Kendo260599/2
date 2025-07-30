@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f4e7ce;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #8b0000;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1.2rem;
+  font-weight: bold;
+  color: #5a2c00;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a22121;
+}
+
+.result-box {
+  margin-top: 2rem;
+  background: #fffaf0;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  line-height: 1.6;
+}
+
+.result-box h2 {
+  color: #8b0000;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1.2rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
